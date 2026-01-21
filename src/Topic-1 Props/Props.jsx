@@ -1,11 +1,40 @@
-import List from "./List"
+import List from "./List";
+import Employee from "./Employee";
 
 const Props = () => {
-    const user = "Tinku";
-    return <>
-        <List a={10} user={user} msg="Good Morning" />
+  const user = {
+        username:"Tinku",
+        skills: ["frontend","backend"],
+        designation: "SDE-2",
+        salary:"12.5 LPA"
+  }
+
+  return (
+    <>
+      {/* <Employee user={user} /> */}
+
+      <Employee  {...user} />
     </>
-    
-}
+  );
+};
 
 export default Props;
+
+/**
+ * - Props File
+ *     <Employee  {...user} />
+ *     <Employee username="Tinku" 
+ *               skills={["frontend","backend"]}  
+ *               designation="SDE-2"  
+ *               salary="12.5 LPA"
+ *     />
+     
+
+*   - Employee Component File
+        props = {
+                username:"Tinku",
+                skills: ["frontend","backend"],
+                designation: "SDE-2",
+                salary:"12.5 LPA"
+        }
+ */
