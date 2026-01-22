@@ -9,32 +9,13 @@ const Props = () => {
         salary:"12.5 LPA"
   }
 
-  return (
-    <>
+  return <>
       {/* <Employee user={user} /> */}
 
-      <Employee  {...user} />
+      <Employee   {...user}/>
     </>
-  );
 };
 
 export default Props;
 
-/**
- * - Props File
- *     <Employee  {...user} />
- *     <Employee username="Tinku" 
- *               skills={["frontend","backend"]}  
- *               designation="SDE-2"  
- *               salary="12.5 LPA"
- *     />
-     
-
-*   - Employee Component File
-        props = {
-                username:"Tinku",
-                skills: ["frontend","backend"],
-                designation: "SDE-2",
-                salary:"12.5 LPA"
-        }
- */
+// <Employee   username="Tinku" skills={["frontend","backend"]} />

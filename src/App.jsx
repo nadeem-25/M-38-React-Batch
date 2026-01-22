@@ -1,9 +1,11 @@
-import Props from "./Topic-1 Props/Props";
+import User from "./Topic-3 map reduce filter/User.jsx"
 
 const App = () => {
-    return <div>
-        <Props/>
+    return <div id="app-component">
+        <User/>
     </div>
 }
 
 export default App;
+
+

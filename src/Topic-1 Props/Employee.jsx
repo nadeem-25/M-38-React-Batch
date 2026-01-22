@@ -21,22 +21,18 @@
  */
 
 const Employee = (props) => {
-  // console.log("props:",props);
-  // const {user} = props;
-  // const {username,skills, designation, salary} = user;
+ 
+  // const {username,skills,designation,salary} = props.user;
+  const {username,skills,designation,salary} = props;
 
-  const entries = Object.entries(props);
-  console.log("entries:", entries);
-  //  values = ['Tinku', Array(2), 'SDE-2', '12.5 LPA']
 
   return (
     <>
       <h1>Employee Component</h1>
-      {entries.map(([k, v]) => (
-        <h2>
-          {k}-{v}
-        </h2>
-      ))}
+      <h2>Username: {username}</h2>
+      <h2>Skills: {skills}</h2>
+      <h2>Designation: {designation}</h2>
+      <h2>Salary: {salary}</h2>
     </>
   );
 };
