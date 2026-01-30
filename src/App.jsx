@@ -1,8 +1,8 @@
-import Parent from "./Topic-6 Synthetic Events/Parent";
+import Counter from "./Topic-7 useState Hook/Counter";
 
 const App = () => {
     return <div id="app-component">
-                <Parent/>
+            <Counter/>
             </div>
 }
 
