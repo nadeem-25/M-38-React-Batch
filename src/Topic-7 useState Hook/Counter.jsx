@@ -1,16 +1,27 @@
 import { useState } from "react";
 
 const Counter = () => {
-  // React state variable
   const [count, setCount] = useState(0);
-
-  console.log("counter render");
+  console.log("counter component render");
 
   const increment = () => {
-    setCount(count + 1);
+    setCount((prev) => {
+      console.log("prev-1 before:", prev);
+      prev = prev + 1;
+      console.log("prev-1 after:", prev);
+      return prev;
+    });
+    setCount((prev) => {
+      console.log("prev-2 before:", prev);
+      prev = prev + 1;
+      console.log("prev-2 after:", prev);
+      return prev;
+    });
+
+    console.log("count:", count);
   };
   return (
-    <div>
+    <div id="counter-component">
       <h1>Counter Component</h1>
       <h2>Count:{count}</h2>
       <button onClick={increment}>Increment</button>
