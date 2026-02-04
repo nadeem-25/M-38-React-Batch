@@ -4,7 +4,7 @@ const Demo3 = () => {
     const [count,setCount] = useState(0);
 
     const z = useRef(null)
-    // z = { current: null }
+    // z = { current: <input> }
 
     const handleCount = () => {
         setCount(count + 1);
