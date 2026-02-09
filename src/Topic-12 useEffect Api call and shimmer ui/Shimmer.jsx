@@ -3,7 +3,7 @@ import "./style.css"
 const Shimmer = () => {
   return (
     <div className="shimmer-container">
-        {Array(10).fill("").map(element =>  <div className="card"></div>)}
+        {Array(18).fill("").map((_,index) =>  <div key={index} className="card"></div>)}
     </div>
   )
 }
