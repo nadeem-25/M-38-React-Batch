@@ -1,9 +1,9 @@
-import Container from "./Topic-12 useEffect Api call and shimmer ui/Container"
+import Counter from "./Topic-13 useEffect stale case/Counter"
 
 const App = () => {
   return (
     <div id="app-component">
-      <Container/>
+     <Counter/>
     </div>
   )
 }
